@@ -16,7 +16,7 @@ public class TitleScreenManager : MonoBehaviour
     private AudioSource audioSource;
     private bool isLoading;
 
-    void Start()
+    void Awake()
     {
         isLoading = false;
         audioSource = gameObject.GetComponent<AudioSource>();
@@ -37,8 +37,8 @@ public class TitleScreenManager : MonoBehaviour
     private IEnumerator LoadScene()
     {
         isLoading = true;
-        fadeScreen.SetTrigger("Trigger_FadeOut");
         yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(1);
         Debug.Log("Scene Loaded");
     }
 

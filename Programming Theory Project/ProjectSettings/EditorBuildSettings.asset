@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/00_TitleScreen.unity
     guid: 984cad53118ed8540890f0a1d6766b5c
   - enabled: 1
-    path: Assets/Scenes/01_PlayerSelectScreen.unity
-    guid: b1f5ffea8cc30844c84273d661a89201
+    path: Assets/Scenes/01_Inheritance.unity
+    guid: bd53bc67464d757469f1df5e72264f7b
+  - enabled: 1
+    path: Assets/Scenes/02_Polymorphism.unity
+    guid: a1c65b782d7bebb46b8e428c779e8ee7
+  - enabled: 1
+    path: Assets/Scenes/03_Encapsulation.unity
+    guid: 65021d91264d5754ea127a50287e1bff
+  - enabled: 1
+    path: Assets/Scenes/04_Abstraction.unity
+    guid: 497d3beef244fe4489608750fdbc01cc
   m_configObjects: {}

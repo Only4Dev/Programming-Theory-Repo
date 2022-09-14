@@ -6,11 +6,11 @@ public class GameMusicPlayer : MonoBehaviour
     [SerializeField] public  AudioSource audioSource;
     private static GameMusicPlayer instance = null;
 
-
     public static GameMusicPlayer Instance
     {
         get { return instance; }
     }
+
     void Awake()
     {
         if (instance != null && instance != this)
