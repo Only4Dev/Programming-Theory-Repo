@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Wizard : Character
 {
+    // Polymorphism
     protected override void Talk()
     {
         Debug.Log("Im a Mystic Wizard");
@@ -11,6 +12,7 @@ public class Wizard : Character
         audioSource.PlayOneShot(soundEffects[0]);
     }
 
+    // Polymorphism
     protected override void UseAbility()
     {
         Debug.Log("Thunder Bolt ! BzZzzZ");
@@ -18,6 +20,7 @@ public class Wizard : Character
         audioSource.PlayOneShot(soundEffects[1]);
     }
 
+    // Polymorphism
     protected override void UseAbility2()
     {
         Debug.Log("Teleport ! Im now out out your sight");

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Warrior : Character
 {
+
+    // Polymorphism
     protected override void Talk()
     {
         Debug.Log("Im a Brave Warrior");
@@ -12,6 +14,7 @@ public class Warrior : Character
 
     }
 
+    // Polymorphism
     protected override void UseAbility()
     {
         Debug.Log("Power Slash! HYAAAAT");
@@ -19,6 +22,7 @@ public class Warrior : Character
         audioSource.PlayOneShot(soundEffects[1]);
     }
 
+    // Polymorphism
     protected override void UseAbility2()
     {
         Debug.Log("Battle Roar! Im ready to fight!");

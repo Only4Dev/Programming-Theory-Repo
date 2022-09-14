@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Orc : Character
 {
+    // Polymorphism
     protected override void Talk()
     {
         Debug.Log("Roar im ij orc !");
@@ -11,6 +12,7 @@ public class Orc : Character
         audioSource.PlayOneShot(soundEffects[0]);
     }
 
+    // Polymorphism
     protected override void UseAbility()
     {
         Debug.Log("Asht kopuk smash! YEEARG !");
@@ -18,6 +20,7 @@ public class Orc : Character
         audioSource.PlayOneShot(soundEffects[1]);
     }
 
+    // Polymorphism
     protected override void UseAbility2()
     {
         Debug.Log("Throwing axes ! Lat dont gonna ozon !");

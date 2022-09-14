@@ -4,6 +4,7 @@ using System.Collections;
 public class GameMusicPlayer : MonoBehaviour
 {
     [SerializeField] public  AudioSource audioSource;
+    // Encapsulation
     private static GameMusicPlayer instance = null;
 
     public static GameMusicPlayer Instance
@@ -26,6 +27,7 @@ public class GameMusicPlayer : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
+    // Abstraction
     void PlayMusic()
     {
         if (audioSource.isPlaying)

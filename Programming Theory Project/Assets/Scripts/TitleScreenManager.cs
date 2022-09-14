@@ -9,6 +9,7 @@ using UnityEditor;
 
 public class TitleScreenManager : MonoBehaviour
 {
+    // Encapsulation
     [SerializeField] private Button startButton, exitButton;
     [SerializeField] private AudioClip cursor_SFX;
     [SerializeField] private AudioClip select_SFX;
@@ -25,6 +26,8 @@ public class TitleScreenManager : MonoBehaviour
         exitButton.onClick.AddListener(ExitGame);
     }
 
+
+    // Abstraction
     void StartGame()
     {
         if (!isLoading)
@@ -34,6 +37,7 @@ public class TitleScreenManager : MonoBehaviour
         }
     }
 
+    // Abstraction
     private IEnumerator LoadScene()
     {
         isLoading = true;
@@ -42,6 +46,7 @@ public class TitleScreenManager : MonoBehaviour
         Debug.Log("Scene Loaded");
     }
 
+    // Abstraction
     void ExitGame()
     {
         if(!isLoading)
@@ -52,12 +57,14 @@ public class TitleScreenManager : MonoBehaviour
 #endif     
     }
 
+    // Abstraction
     public void PlayCursorSFX()
     {
         if (!isLoading)
         audioSource.PlayOneShot(cursor_SFX);
     }
 
+    // Abstraction
     void PlaySelectSFX()
     {
         if(!isLoading)
